@@ -1,0 +1,25 @@
+---
+data_path: data/Telco_customer_churn.xlsx
+model:
+  training:
+    test_size : 0.3
+  
+  ## selected features after experimentation ##
+  features:
+    - Contract_Month-to-month
+    - Internet Service_Fiber optic
+    - Payment Method_Electronic check
+    - Internet Service_No
+    - Contract_Two year
+    - Tenure Months
+
+  ## hyperparameter tuned after experimentation ##
+  xgb_params:
+    learning_rate: 0.01
+    max_depth: 3
+    n_estimators: 200
+    scale_pos_weight: 3
+    enable_categorical": true
+  
+  save_path : "model.json"
+seed : 42
