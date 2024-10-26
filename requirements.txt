@@ -1,0 +1,9 @@
+apache-airflow
+matplotlib
+numpy
+pandas
+seaborn
+sklearn
+xgboost
+yaml
+zipfile
