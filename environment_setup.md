@@ -32,14 +32,14 @@ conda activate telco-churn
 
 ```bash
 # Create new environment
-conda create -n telco-churn python=3.9
+conda create -n telco-churn python=3.12
 
 # Activate environment
 conda activate telco-churn
 
 # Install packages
 conda install -c conda-forge apache-airflow
-conda install matplotlib numpy pandas seaborn scikit-learn xgboost pyyaml
+conda install matplotlib numpy pandas seaborn scikit-learn xgboost pyyaml openpyxl
 ```
 
 ## Option 2: Using Python venv
@@ -118,5 +118,6 @@ deactivate && rm -rf venv          # For venv
 
 5. **Troubleshooting**:
 - If you encounter conflicts in conda, try installing packages one at a time
-- For Airflow, ensure you're using a compatible Python version (3.8-3.11)
+- For Airflow, ensure you're using a compatible Python version (3.8-3.12)
 - XGBoost may require additional setup for GPU support
+- There maybe some issue on openpyxl installation. Do it manually if occurs.
