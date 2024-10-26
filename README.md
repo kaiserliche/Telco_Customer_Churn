@@ -3,6 +3,11 @@
 ## Project Structure
 
 ```
+├── ariflow                 # Local Airflow Dags
+│   ├──dags
+│        └── <dags.py>        
+├── pipelines               # Docker container dags
+│       └── <dags.py>
 ├── analysis/
 │   ├── eda.ipynb         # Exploratory Data Analysis
 │   └── modelling.ipynb   # Model Development
@@ -11,8 +16,10 @@
 ├── data/
 │   └── Telco_customer_churn.xlsx
 ├── dataLoader.py         # Data processing utilities
-├── modelTraining.py      # Model training script
-└── README.md
+├── modelTraining.py
+├── connection.txt        # Model training script
+├── README.md
+└── environment_setup.md  
 ```
 
 ## Analysis Notebooks
