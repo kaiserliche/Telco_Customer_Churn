@@ -9,7 +9,7 @@ import zipfile
 
 # Configurations
 class Config:
-    DOWNLOAD_DIR = "../data"  # Updated to absolute path
+    DOWNLOAD_DIR = "../data/raw_data/"  # Updated to absolute path
     ZIP_FILE_PATH = os.path.join(DOWNLOAD_DIR, "dataset.zip")
     # DB_CONN = "postgres_default"
     API_CONN_ID = "Telco_Kaggle"  # Ensure 'Telco' connection is defined in Airflow
