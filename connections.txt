@@ -1,4 +1,4 @@
 # HTTP connection to be made in airflow for data download
 
-Connection ID : Telco
-HOST : https://storage.googleapis.com
+Connection ID : Telco_Kaggle
+HOST : https://www.kaggle.com
